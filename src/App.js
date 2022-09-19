@@ -10,8 +10,8 @@ function App() {
         <main>
             <Nav />
             <Routes>
+            <Route path="/about" element={<AboutPage />} />
                 <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<AboutPage />} />
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
         </main>
