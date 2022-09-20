@@ -1,6 +1,8 @@
-import img1 from "../assets/Twitter_Social_Icon_Rounded_Square_White.png";
 
 export default function AboutIntro() {
+    
+
+
     return (
         <main className="grid-main">
             <article className="about">

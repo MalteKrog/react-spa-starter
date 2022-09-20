@@ -22,7 +22,7 @@ export default function Nav() {
             <NavLink to="/" end><img className="nav-logo" src={img3} alt=""></img></NavLink>
             <div className={active}>
                 <NavLink to="about" end><span>01.</span>About</NavLink>
-                <NavLink to="/" end><span>02.</span>My work</NavLink>
+                <NavLink to="work" end><span>02.</span>My work</NavLink>
                 <NavLink to="/" end><span>03.</span>My CV</NavLink>
                 <NavLink to="/" end><span>04.</span>Contact</NavLink>
             </div>

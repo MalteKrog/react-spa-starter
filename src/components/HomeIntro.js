@@ -1,3 +1,5 @@
+import AboutButton from "./AboutButton.js"
+
 export default function HomeIntro() {
     return (
         <main className="page">
@@ -7,7 +9,7 @@ export default function HomeIntro() {
                 <h3 className="home-titel">I make websites</h3>
                 <p className="home-tekst">Lorem Ipsum er ganske enkelt fyldtekst fra print- og typografiindustrien. Lorem Ipsum har været standard fyldtekst siden 1500-tallet, hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.
                 </p>
-                <button></button>
+                <AboutButton />  
             </div>
         </main>
     )

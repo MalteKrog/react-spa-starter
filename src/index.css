@@ -82,7 +82,7 @@ ul {
     align-items: center;
     justify-content: flex-start;
     height: 8vh;
-    background-color: #0a192F;
+    background-color: #112240;
 }
 
 .nav-logo {
@@ -114,11 +114,13 @@ ul {
 }
 
 .nav-toggler {
+    z-index: 11;
     cursor: pointer;
 }
 
 span {
     color: #5ff1d0;
+    margin-right: 10px;
 }
 
 span::after {
@@ -129,17 +131,18 @@ span::after {
 .nav-menu {
     display: flex;
     position: fixed;
-    top: 7vh;
+    top: 0;
     right: 0;
-    width: 50%;
-    height: 93vh;
-    background-color: #0a192F;
+    width: 60%;
+    height: 100vh;
+    background-color: #112240;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     transform: translateX(100%);
     transition: 0.05s ease-in;
+    z-index: 10;
 }
 
 .nav-active {
@@ -213,7 +216,6 @@ span::after {
 }
 
 .mail > a {
-    padding-left: 15px;
     color: #5ff1d0;
 }
 
@@ -239,6 +241,14 @@ span::after {
 .home-titel {
     
 }
+
+.work-title {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
 
 .skills-section {
     width: 90%;
@@ -311,6 +321,87 @@ span::after {
     background-image: url("assets/Portrait.jpg");
     opacity: 0.6;
 }
+ 
+/* Button styling */
+
+.button-div {
+    margin-top: 50px;
+}
+
+.next-button {
+    padding: 1rem 2.75rem;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.5s ease-in;
+}
+
+.next-button:hover {
+    background-color: #9ffae83c;
+}
+
+.grid-container{
+    margin: 25px 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+
+.card {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url(assets/Background_test.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.f-title {
+    font-size: 16px;
+    color: #5ff1d0;
+}
+
+.card-title {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.card-button-div {
+    
+    margin-top: 20px
+}
+
+@media only screen and (min-width: 450px) {
+    .card {
+        height: 350px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .card {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .grid-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        margin: 0px 20px 20px 0;
+        height: 350px;
+        width: 400px;
+    }
+}
 
 
 
@@ -325,6 +416,13 @@ span::after {
 
     .side-mail {
         display: block;
+    }
+
+    .grid-container{
+        margin: 25px 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
     }
 }
 
